@@ -11,10 +11,12 @@ This repository documents our exploration of born-accessible organizational prac
 ```
 born-accessible-cnib/
 ├── PROJECT_OVERVIEW.md           # Detailed project vision and scope
+├── DR_LAZAR_BORN_ACCESSIBLE_FRAMEWORK.md  # Research on Dr. Lazar's framework
 ├── docs/
 │   ├── staff/                    # Internal staff operations and workflows
-│   ├── external-entities/        # External interactions and partnerships
+│   ├── volunteers/               # Volunteer engagement and lived experience
 │   ├── clients/                  # Client experience and service delivery
+│   ├── external-entities/        # External interactions and partnerships
 │   ├── vendors/                  # Vendor relationships and requirements
 │   ├── observations/             # Key observations and insights
 │   └── recommendations/          # Best practices and recommendations
