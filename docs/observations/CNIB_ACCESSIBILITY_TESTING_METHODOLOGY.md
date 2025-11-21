@@ -310,6 +310,111 @@ CNIB employs two models of lived experience testing, both designed and executed 
 - On-demand testing throughout lifecycle (design, development, UAT)
 - Example: MyCNIB application development with external contractors
 
+---
+
+## Testing Request Intake: Evolution from Informal to Structured
+
+### Historical Model (Until November 2024)
+
+**How Requests Arrived at AccessLabs**:
+- All testing requests came to **Sheetal Kocchar** (prime lead for vendor procurement testing)
+- **Completely informal channels**:
+  - Email from departments across CNIB
+  - Teams direct messages
+  - No standardized intake form
+  - No request tracking system
+  - No formalized prioritization
+
+**Problems with Informal Model**:
+- **No visibility**: Requests scattered across email threads and DMs
+- **No tracking**: Impossible to see volume, patterns, or completion rates
+- **No prioritization framework**: First-come-first-served or "loudest voice"
+- **Unrealistic expectations**: Even significant testing efforts requested with fast turnaround
+- **Bottleneck**: All requests funneled through single person (Sheetal)
+- **No documentation**: Historical record of testing requests lost in email/Teams
+- **Capacity issues**: No way to manage workload or allocate resources systematically
+- **Lack of structure**: Precisely what Task Force identified as gap
+
+**Typical Scenario**:
+> Department head sends Teams message to Sheetal: "We need this new vendor platform tested by Friday for procurement decision. Can you help?"
+>
+> Reality: Platform requires 20+ hours of comprehensive testing. Sheetal already has 3 other requests in queue. No formal way to push back, negotiate timeline, or make requester aware of trade-offs.
+
+**Impact**:
+- AccessLabs team reactive, not proactive
+- Testing quality at risk when rushed
+- No data to advocate for additional resources
+- Requesters frustrated by unclear timelines
+- Informal process fed directly into creation of **Systems & Technology Subcommittee (S2)**
+
+### New Model (November 2024 Launch)
+
+**TopDesk Testing Request Form**:
+- Formal intake system going live as of this week
+- Service Desk / Contact Centre experience for internal testing clients
+- Structured request capture with required fields
+- Tracking and reporting capabilities
+
+**What TopDesk Form Captures**:
+- Requester information (department, contact, urgency)
+- What needs testing (platform, document, app, website, etc.)
+- Purpose (procurement, partnership, advocacy, internal development, etc.)
+- Timeline and business need
+- Scope (full platform vs. specific feature)
+- Accessibility priority level
+- Consequences if testing delayed
+
+**What TopDesk Form Enables**:
+- **Request tracking**: Every request has ticket number, status, history
+- **Visibility**: Management can see volume, patterns, bottlenecks
+- **Prioritization**: Transparent criteria for triaging requests
+- **Capacity planning**: Data to justify additional resources
+- **Timeline management**: Realistic turnaround based on scope and capacity
+- **Accountability**: Clear ownership and status updates
+- **Reporting**: Metrics on requests received, completed, average turnaround time
+
+**What TopDesk Form Does NOT Track**:
+- **Internal testing processes**: AccessLabs methodologies, tester assignments, detailed test plans
+- **Internal planning**: Sprint planning, capacity allocation, professional development
+- **Testing execution details**: Who tested, what tools used, how many hours spent
+- **Portal activities**: Developer interactions, retest requests, remediation tracking
+
+**TopDesk Scope**: Client-facing intake and tracking, not internal project management
+
+**Relationship to Accessibility Hub Recommendation**:
+- TopDesk form is **interim solution** for AccessLabs testing requests
+- Accessibility Hub (Task Force recommendation) would expand this model organization-wide
+- Hub would triage testing requests but also barrier reports, AT support, accommodation requests
+- TopDesk testing form proves concept: structured intake reduces chaos
+
+### Why This Matters for Born Accessible Framework
+
+**Before TopDesk (Ad Hoc Model)**:
+- Accessibility testing perceived as "favor" or "extra work"
+- No organizational visibility into testing as systematic function
+- No data to prove need for resources
+- Testing happens reactively, when problems arise
+- Bolted-on approach: test at end when someone remembers
+
+**After TopDesk (Structured Model)**:
+- Testing recognized as **organizational service** with demand, capacity, and value
+- Data enables continuous improvement (where are bottlenecks? what's most requested?)
+- Justification for dedicated resources (X requests per month, Y hours average)
+- Proactive capacity planning possible
+- Embedded approach: testing part of standard workflow for procurement, development, partnerships
+
+**S2 Subcommittee Origin**:
+- Informal testing requests to Sheetal → Task Force identified as systemic gap
+- S2 formed to create structure around testing, vendor accountability, barrier reporting
+- TopDesk form is **direct outcome** of Task Force work
+- Sheetal's dual role: AccessLabs testing lead + S2 committee member ensures real-world expertise informs recommendations
+
+**Born Accessible Principle**:
+- Systematic intake processes = accessibility as infrastructure, not afterthought
+- Tracking and visibility = accountability and continuous improvement
+- Structured requests = realistic timelines, quality testing, sustainable workload
+- Data-driven decisions = evidence-based resource allocation
+
 ### Implications for Task Force Recommendations
 
 **Systems & Technology Subcommittee S2** (Standardized Testing Protocol) should:
@@ -318,8 +423,15 @@ CNIB employs two models of lived experience testing, both designed and executed 
 - Create clear pathways for staff to request AccessLabs testing
 - Define when informal testing is appropriate vs. when AccessLabs involvement needed
 - Integrate AccessLabs approaches with Accessibility Hub intake
+- **Build on TopDesk testing request form**: Already implemented as of November 2024, proving structured intake works
+- Evaluate TopDesk form effectiveness after 3-6 months (volume, turnaround times, user satisfaction)
+- Use TopDesk data to inform Accessibility Hub design
 
-**Not starting from scratch**: AccessLabs has professional methodologies that work. Challenge is making them accessible and known across organization.
+**Not starting from scratch**:
+- AccessLabs has professional methodologies that work (Approaches #2-5)
+- TopDesk form already operational for testing requests
+- Challenge is making them accessible and known across organization
+- S2 can learn from TopDesk implementation: what works, what needs improvement
 
 ---
 
@@ -929,15 +1041,29 @@ The previous "Level 0-4" framework is useful for understanding rigor spectrum, b
 
 ### Entry Points for Testing Requests
 
-**Accessibility Hub** serves as central intake for testing requests (per Recommendations):
-1. Staff submit testing request via form
-2. Hub triages based on:
-   - Purpose (procurement, partnership, advocacy, internal development, client service)
-   - Urgency (blocking decision, upcoming launch, periodic review)
-   - Scope (full platform, specific feature, document, etc.)
-3. Hub assigns appropriate testing level
-4. Hub coordinates testers and schedules
-5. Hub delivers results and tracks follow-up
+**Current State (November 2024)**:
+- **TopDesk Testing Request Form**: Operational as of this week
+- Staff submit testing requests via TopDesk form (Service Desk interface)
+- Requests go to Sheetal Kocchar (AccessLabs testing lead)
+- Form captures: requester, what needs testing, purpose, timeline, scope, urgency
+- Every request tracked with ticket number, status, history
+- Enables visibility, prioritization, capacity planning, reporting
+
+**Future State (Task Force Recommendation)**:
+- **Accessibility Hub** expands TopDesk model organization-wide
+- Hub serves as central intake not just for testing but also barrier reports, AT support, accommodation requests
+- Hub triages based on:
+  - Purpose (procurement, partnership, advocacy, internal development, client service)
+  - Urgency (blocking decision, upcoming launch, periodic review)
+  - Scope (full platform, specific feature, document, etc.)
+- Hub assigns appropriate testing level
+- Hub coordinates testers and schedules
+- Hub delivers results and tracks follow-up
+
+**Evolution**:
+- Phase 1 (complete): TopDesk form for AccessLabs testing requests
+- Phase 2 (Task Force recommendation): Accessibility Hub integrates testing with broader accessibility services
+- TopDesk proves structured intake works; Hub scales model organization-wide
 
 ### Who Does What Testing (Revised Based on Actual CNIB Structure)
 
