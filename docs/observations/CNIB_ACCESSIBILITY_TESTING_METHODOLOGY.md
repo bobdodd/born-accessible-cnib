@@ -325,14 +325,34 @@ CNIB employs two models of lived experience testing, both designed and executed 
   - No request tracking system
   - No formalized prioritization
 
-**Problems with Informal Model**:
-- **No visibility**: Requests scattered across email threads and DMs
-- **No tracking**: Impossible to see volume, patterns, or completion rates
+**Organizational Context**:
+- Sheetal's work moved to AccessLabs approximately 12 months ago (late 2023)
+- Previously part of CNIB Research Team
+- Move to AccessLabs formalized testing as social enterprise function
+
+**Interim Tracking Solution (Past 12 Months)**:
+- **Salesforce tracking** implemented after move to AccessLabs
+- AccessLabs sales team manually records internal testing requests in Salesforce
+- Purpose: Apply nominal internal costing to testing work
+- Salesforce dashboards show volume and scale of internal testing to senior CNIB staff
+- **Important limitation**: Sales-level tracking, not ERP-style production tracking
+- Does not capture:
+  - Detailed workflow steps
+  - Individual tester assignments
+  - Actual hours spent per request
+  - Testing methodologies used
+  - Remediation cycles
+
+**Problems with Informal Model** (Even with Salesforce):
+- **Request intake still informal**: Salesforce entered after-the-fact by sales team, not by requesters
+- **No visibility at intake**: Requests still scattered across email threads and DMs before Salesforce entry
+- **No tracking during execution**: Impossible to see real-time status, only post-completion logging
 - **No prioritization framework**: First-come-first-served or "loudest voice"
 - **Unrealistic expectations**: Even significant testing efforts requested with fast turnaround
 - **Bottleneck**: All requests funneled through single person (Sheetal)
-- **No documentation**: Historical record of testing requests lost in email/Teams
-- **Capacity issues**: No way to manage workload or allocate resources systematically
+- **Delayed documentation**: Historical record created retrospectively in Salesforce, not at time of request
+- **Capacity issues**: No way to manage workload or allocate resources systematically during execution
+- **Sales vs. operations**: Salesforce designed for client sales tracking, not internal operational workflow
 - **Lack of structure**: Precisely what Task Force identified as gap
 
 **Typical Scenario**:
@@ -381,27 +401,74 @@ CNIB employs two models of lived experience testing, both designed and executed 
 
 **TopDesk Scope**: Client-facing intake and tracking, not internal project management
 
+**Integration with Existing Systems**:
+- TopDesk form feeds into Salesforce for financial tracking
+- Reports exported from TopDesk and sent to AccessLabs sales team
+- Sales team continues to use Salesforce for nominal internal costing and dashboards
+- **Still sales-level tracking, not ERP-style production tracking**
+- Future state might integrate TopDesk directly with financial systems, eliminating manual export step
+
+**Evolution of Tracking**:
+1. **Pre-2023**: Informal requests, no tracking (Research Team era)
+2. **2023-2024**: Informal requests + retrospective Salesforce logging (early AccessLabs era)
+3. **November 2024**: TopDesk form for structured intake + Salesforce for financial tracking (current)
+4. **Future (Task Force recommendation)**: Accessibility Hub with integrated request/financial/operational tracking
+
+**What TopDesk Improves Over Salesforce-Only Model**:
+- **Requester-initiated**: Requesters fill form themselves, not retrospective by sales team
+- **Real-time visibility**: See request status during execution, not just post-completion
+- **Operational focus**: Designed for request workflow, not sales pipeline
+- **Immediate documentation**: Request captured at time of submission, not after completion
+- **Standardized information**: Required fields ensure consistent data capture
+- **Triage-ready**: Form structure enables prioritization decisions
+
+**What TopDesk Still Doesn't Capture** (Like Salesforce):
+- Internal testing processes and methodologies
+- Detailed work breakdown and tester assignments
+- Actual hours spent (still sales-level estimates, not ERP-style time tracking)
+- Testing execution details
+- True production-level operational metrics
+
 **Relationship to Accessibility Hub Recommendation**:
 - TopDesk form is **interim solution** for AccessLabs testing requests
 - Accessibility Hub (Task Force recommendation) would expand this model organization-wide
 - Hub would triage testing requests but also barrier reports, AT support, accommodation requests
 - TopDesk testing form proves concept: structured intake reduces chaos
+- Future Hub might integrate operational tracking with financial systems (beyond current sales-level approach)
 
 ### Why This Matters for Born Accessible Framework
 
-**Before TopDesk (Ad Hoc Model)**:
+**Maturity Progression**:
+
+**Stage 1: Pre-2023 (Research Team Era) - Ad Hoc Model**:
 - Accessibility testing perceived as "favor" or "extra work"
 - No organizational visibility into testing as systematic function
 - No data to prove need for resources
 - Testing happens reactively, when problems arise
 - Bolted-on approach: test at end when someone remembers
 
-**After TopDesk (Structured Model)**:
+**Stage 2: 2023-2024 (Early AccessLabs) - Interim Visibility**:
+- Move to AccessLabs signals testing as business function, not just research
+- Salesforce tracking provides senior leadership visibility (dashboards)
+- Nominal internal costing shows value/volume of internal testing
+- **But**: Request intake still informal, tracking retrospective, sales-level only
+- Improvement: Data exists for advocacy, but operational challenges remain
+
+**Stage 3: November 2024 (TopDesk Launch) - Structured Intake**:
 - Testing recognized as **organizational service** with demand, capacity, and value
+- Request intake formalized (requesters initiate, not retrospective logging)
+- Real-time visibility during execution, not just post-completion
 - Data enables continuous improvement (where are bottlenecks? what's most requested?)
 - Justification for dedicated resources (X requests per month, Y hours average)
 - Proactive capacity planning possible
 - Embedded approach: testing part of standard workflow for procurement, development, partnerships
+- **Still limitation**: Sales-level financial tracking, not ERP-style production tracking
+
+**Stage 4: Future (Accessibility Hub) - Integrated Model**:
+- Hub integrates testing with broader accessibility services
+- Potential for operational-level tracking (actual hours, detailed workflows)
+- Organization-wide model (not just AccessLabs)
+- Full integration with financial and operational systems
 
 **S2 Subcommittee Origin**:
 - Informal testing requests to Sheetal → Task Force identified as systemic gap
