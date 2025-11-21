@@ -657,6 +657,146 @@ Create comprehensive framework for vendor accessibility requirements, testing, a
 
 ---
 
+### Critical Addition: Address Practical Vendor Testing Challenges
+
+**Based on**: Comprehensive analysis in `CNIB_ACCESSIBILITY_TESTING_METHODOLOGY.md` documenting actual operational challenges AccessLabs faces in vendor testing.
+
+#### NEW ACTION 1.6: Requester Responsibilities and Test Scenario Requirements
+
+**Problem Identified**: Sheetal (AccessLabs lead for vendor testing) relies on requesters providing clear direction on what to test and structured test scenarios. These often don't appear, leading to incomplete testing of complex systems.
+
+**Root Cause**: Third-party vendor tools are extremely complex (HR platforms, ERP systems, expense management). AccessLabs cannot be experts in every domain. Without domain expertise and clear test scenarios, testing focuses on surface-level features and misses critical workflows.
+
+**Solution**: Create **Vendor Testing Request Template** with mandatory fields:
+
+**Required Information from Requester**:
+1. **Clear Scope Definition**:
+   - Which modules/features will CNIB actually use?
+   - Priority ranking: "must test" vs. "nice to test if time permits"
+   - Which workflows are mission-critical vs. optional?
+
+2. **Structured Test Scenarios** (step-by-step):
+   - Example: "New employee onboarding: HR creates record → Manager assigns training → Employee completes forms → System triggers background check"
+   - Realistic data and context for each scenario
+   - Expected outcome vs. actual outcome
+
+3. **User Role Mapping**:
+   - Who uses this system? (employees, managers, HR staff, executives, external users?)
+   - What permissions/views does each role have?
+   - Which roles MUST be tested for accessibility?
+
+4. **Subject Matter Expert (SME) Availability**:
+   - Designated contact who knows how CNIB will actually use the system
+   - Available during testing window to answer AccessLabs questions
+   - Clarification on unfamiliar terminology or workflows
+
+**Implementation**:
+- Add to TopDesk testing request form as required fields
+- Requester cannot submit without providing test scenarios
+- Form includes examples and templates
+- If incomplete, AccessLabs can reject request until information provided
+
+**Why This Matters**: Without clear test scenarios, testing of enterprise HR platform might focus on login and navigation, completely missing critical approval chains, batch operations, or reporting functions that create accessibility barriers.
+
+#### NEW ACTION 1.7: Sandbox Access and Vendor Coordination Requirements
+
+**Problem Identified**: Lived experience testing requires functioning sandbox environment with realistic test data. Vendors often don't provide sandbox, or provide limited trial access with tight time windows (30-day trials) that create impossible planning constraints.
+
+**Four Common Sandbox Failures Documented**:
+1. **30-Day Trial Rush**: Week 1 (setup), Week 2 (smoke test finds config issues), Week 3 (vendor fixes, only 10 days left), Week 4 (rush quality-compromised testing)
+2. **No Sandbox Available**: Vendor requires contract signature before providing testing environment
+3. **Generic Demo Environment**: Shared across trial customers, no CNIB-specific configuration, fake data
+4. **Unconfigured Sandbox**: Empty database, no workflows configured, can't test realistic scenarios
+
+**Solution: Procurement Sandbox Access Policy**
+
+**Mandatory Vendor Requirements (in RFP/trial agreement)**:
+1. **Adequate Sandbox Access**:
+   - Functioning test environment separate from production
+   - Configured to reflect CNIB's planned usage (not generic demo)
+   - Available for sufficient duration: Minimum 60 days (not arbitrary 30)
+   - Renewable if testing discovers issues requiring vendor remediation and retest
+
+2. **Realistic Test Data**:
+   - Sample data reflecting CNIB use cases (not generic "John Doe")
+   - Multiple user accounts with different roles/permissions
+   - Workflows configured end-to-end (not just empty forms)
+   - Data volume sufficient to test AT performance (not 3 sample records)
+
+3. **Vendor Support During Testing**:
+   - Technical support available when testers encounter configuration issues
+   - Vendor accessibility team available for questions (not just general support)
+   - Ability to request configuration changes if testing exposes issues
+   - Documentation for testers (how to access, credentials, setup guides)
+
+4. **Flexible Testing Timeline**:
+   - Sandbox access starts when CNIB is ready (after test scenarios defined, testers recruited)
+   - Duration accounts for realistic testing timeline (not vendor's standard 30 days)
+   - Extension available if remediation and retesting needed
+   - No pressure to rush testing due to arbitrary trial expiration
+
+**Procurement Integration**:
+- **BEFORE initiating vendor trial**, Procurement consults AccessLabs on timeline and sandbox requirements
+- Trial duration negotiated based on testing needs, not vendor's standard terms
+- Sandbox access and support terms written into trial agreement as conditions
+- Extension clause mandatory if testing discovers issues requiring remediation
+
+**Consequences for Vendors Who Won't Provide Sandbox**:
+- If vendor refuses adequate sandbox access: Require formal third-party ACR/VPAT dated within 6 months
+- If vendor has neither sandbox nor ACR: Not eligible for procurement
+- No exceptions for "only vendor" claims without executive approval and documented risk acceptance
+
+**Why This Matters**: SAP Concur likely purchased without adequate sandbox access for comprehensive testing. This policy prevents repeating that mistake.
+
+#### NEW ACTION 1.8: Coordination Across Multiple Stakeholders
+
+**Problem Identified**: Vendor testing requires coordination between 7+ parties: Requester, Procurement, IT, AccessLabs (Sheetal), Vendor, Testers, Senior Management. Coordination failures create gaps (no test scenarios, inadequate trial duration, IT blocks sandbox access, testers available but sandbox not ready).
+
+**Common Failure Pattern Documented**:
+> "Department head sends Teams message to Sheetal: 'We need this platform tested by Friday for procurement decision next week.'"
+>
+> Reality: Sheetal has never seen the platform, no test scenarios provided, no sandbox access yet (Procurement still negotiating trial), timeline unrealistic for lived experience testing, Sheetal already has 3 other requests in queue.
+
+**Solution: Procurement Accessibility Checkpoint Process**
+
+**Stage 1: Requirements Definition** (BEFORE vendor search):
+- [ ] Department defines accessibility requirements using template
+- [ ] IT reviews for infrastructure compatibility (VPN, SSO, firewall, AT compatibility)
+- [ ] AccessLabs consulted on testing timeline (minimum 2-4 weeks for comprehensive testing)
+- [ ] Budget includes accessibility testing costs
+
+**Stage 2: Vendor Evaluation** (DURING vendor search):
+- [ ] Procurement requests VPAT/ACR from all vendors in RFP
+- [ ] Vendor Evaluation Rubric applied (minimum 70% accessibility score)
+- [ ] Sandbox access requirements included in RFP/trial terms
+- [ ] Vendors who meet accessibility threshold advance
+
+**Stage 3: Pre-Purchase Testing** (BEFORE contract signature):
+- [ ] Requester provides test scenarios to AccessLabs using template
+- [ ] Procurement negotiates sandbox access per policy (60+ days, configured, renewable)
+- [ ] IT sets up network access in advance (no firewall blocks during testing window)
+- [ ] AccessLabs recruits testers and schedules sessions
+- [ ] Comprehensive testing completed (smoke test + lived experience + expert review as needed)
+- [ ] Testing results inform go/no-go decision BEFORE purchase
+
+**Stage 4: Deployment** (AFTER purchase, contingent on testing):
+- [ ] If testing found barriers: Vendor remediates before deployment OR timeline/workaround agreed
+- [ ] IT deployment includes accessibility configuration
+- [ ] Staff training includes AT-specific guidance
+- [ ] Vendor communication tracking begins (log all accessibility issues and responses)
+
+**Stage 5: Ongoing Monitoring** (POST-deployment):
+- [ ] Vendor update notifications reviewed for accessibility impact
+- [ ] Staff barrier reports tracked and communicated to vendor
+- [ ] Annual accessibility review for mission-critical systems
+- [ ] Contract renewal contingent on accessibility performance
+
+**Procurement Integration Tool**: Accessibility Checkpoint Checklist (gate review at each stage)
+
+**Why This Matters**: Systematic coordination prevents "test by Friday" chaos and ensures testing happens at right time with right resources.
+
+---
+
 ## RECOMMENDATION S2: Establish Standardized Accessibility Testing Protocol (HIGH PRIORITY)
 
 ### Task
