@@ -345,6 +345,33 @@ CNIB employs two models of lived experience testing, both designed and executed 
 
 **Stakeholders**: Procurement, IT, department requesting system, IDEA Team, potential end users
 
+**CNIB Leadership in National Procurement Standards**:
+- **Sheetal Kocchar** (AccessLabs, reporting to Bob Dodd, Head of Accessibility): Prime lead for vendor procurement testing at CNIB Foundation/AccessLabs
+- Provided research to Accessibility Standards Canada that influenced national guidance
+- **National Impact**: CNIB research contributed to [Technical Guide on Procurement of Accessible Services](https://accessible.canada.ca/creating-accessibility-standards/technical-guide-procurement-accessible-services)
+- Guide jointly developed by Accessibility Standards Canada and Public Services and Procurement Canada
+- Supports *Accessible Canada Act* goal of barrier-free society by 2040
+- **Sheetal serves on Systems & Technology Subcommittee (S2)**, bringing procurement expertise to Task Force
+
+**National Procurement Framework** (CNIB-Influenced):
+1. **Define Requirements**: Clarify service purpose, end users (including people with disabilities), deliverables
+2. **Identify Barriers**: Assess physical, communication, environmental, technological, attitudinal, organizational obstacles
+3. **Gather Information**: Research applicable accessibility standards (CAN/ASC - EN 301 549:2024), market capacity
+4. **Develop Requirements**: Create enforceable specifications and evaluation criteria
+
+**Vendor Assessment Requirements** (National Standard):
+- Accessibility Conformance Reports (ACRs) or VPATs required from suppliers
+- Evidence of experience with accessible services
+- User testing involving people with disabilities
+- Conformance testing to validate against standards
+- Phased compliance timelines if full accessibility not immediate
+
+**CNIB's Role**:
+- Expertise developed through internal procurement testing → national guidance
+- AccessLabs professional testing validates vendor claims
+- SAP Concur case study: Example of procurement testing catching accessibility gaps
+- Sheetal's research → federal government adoption → benefits all Canadian organizations
+
 ---
 
 ### 2. Vendor Update Testing
@@ -985,6 +1012,16 @@ Testing is key mechanism for vendor accountability:
 - **Contract requirement**: Vendor must pass Level 2 testing
 - **Update testing**: Level 1-2 testing before deploying vendor updates
 - **Issue tracking**: Document vendor responsiveness to accessibility bugs
+
+**CNIB's National Leadership in Procurement**:
+- Sheetal Kocchar (AccessLabs, Head of Accessibility Bob Dodd) leads vendor procurement testing
+- CNIB research influenced Accessibility Standards Canada's [Technical Guide on Procurement of Accessible Services](https://accessible.canada.ca/creating-accessibility-standards/technical-guide-procurement-accessible-services)
+- National framework adopted by federal government reflects CNIB procurement methodology
+- Four-step framework: Define Requirements → Identify Barriers → Gather Information → Develop Requirements
+- Vendor assessment standards now include ACRs/VPATs, user testing, conformance testing
+- CNIB's internal procurement pain points (e.g., SAP Concur) → research → national guidance
+- Sheetal serves on Systems & Technology Subcommittee (S2), bringing procurement expertise to Task Force
+- **Impact**: CNIB expertise developed through internal testing → shapes national standards → benefits all Canadian organizations
 
 ### Lived Experience Leadership
 
