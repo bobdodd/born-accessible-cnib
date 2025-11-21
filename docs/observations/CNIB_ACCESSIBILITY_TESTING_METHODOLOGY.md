@@ -1144,6 +1144,276 @@ One of Bob Dodd's primary hopes for Accessibility Task Force:
 
 ---
 
+#### Practical Challenges of Vendor Testing
+
+While CNIB has developed national leadership in procurement testing methodology, **actual execution faces significant operational challenges** that impact testing quality, timeline, and effectiveness.
+
+**Challenge #1: Complex Systems and High Learning Curves**
+
+**The Reality**:
+- Third-party vendor tools are often **extremely complex**
+- Learning curve into new platforms can be very high
+- AccessLabs testing team (Sheetal typically leads vendor testing) cannot be experts in every vendor platform
+- Without domain expertise, testing may miss critical accessibility barriers in complex workflows
+
+**What This Means**:
+- **Reliance on clear direction from requester**: Sheetal needs clear guidance on what features/workflows to test
+- **Dependency on test scenarios**: Without structured test scenarios, testing may focus on surface-level features and miss critical barriers
+- **Risk of incomplete testing**: Complex enterprise systems have dozens or hundreds of features; without guidance, testing may miss key use cases
+
+**Example: Enterprise HR Platform**
+
+> **Scenario**: CNIB considering new HR platform with modules for:
+> - Recruitment and applicant tracking
+> - Onboarding and offboarding
+> - Performance management
+> - Learning and development
+> - Compensation and benefits
+> - Time tracking and leave management
+> - Reporting and analytics
+>
+> **Challenge**: Sheetal is not an HR expert. Without clear direction:
+> - Which modules will CNIB actually use?
+> - Which workflows are mission-critical?
+> - What does "performance review cycle" look like in this system?
+> - How do employees vs. managers vs. HR staff interact with system?
+> - What reports are essential for compliance?
+>
+> **Without Clear Test Scenarios**:
+> - Testing may focus on obvious features (login, navigation, search)
+> - May miss critical but non-obvious workflows (batch operations, approval chains, reporting)
+> - May not test different user roles (employee vs. manager vs. HR admin)
+> - May not discover barriers that emerge only in multi-step processes
+
+**What Sheetal Needs (But Doesn't Always Get)**:
+
+1. **Clear Scope Definition**
+   - Which modules/features will CNIB use?
+   - Which modules are "must test" vs. "nice to test if time permits"?
+   - Priority ranking of features by business criticality
+
+2. **Structured Test Scenarios**
+   - Step-by-step workflows for key use cases
+   - Example: "New employee onboarding: HR creates record → Manager assigns training → Employee completes forms → System triggers background check"
+   - Realistic data and context for each scenario
+
+3. **User Role Mapping**
+   - Who uses this system? (employees, managers, HR staff, executives, external candidates?)
+   - What permissions/views does each role have?
+   - Which roles must be tested for accessibility?
+
+4. **Domain Expert Availability**
+   - Subject matter expert (requester, department staff) available to answer questions
+   - Someone who knows how CNIB will actually use the system
+   - Clarification on unfamiliar terminology or workflows
+
+**Challenge #2: Sandbox/Test Environment Availability**
+
+**The Reality**:
+- **Lived experience testing requires working sandbox environment** with realistic test data
+- Vendors often do not provide sandbox access, or only limited trial access
+- Sandbox environments may have tight time windows (e.g., "30-day trial")
+- Realistic test data may not be available in sandbox (empty database, generic examples)
+
+**What This Means**:
+- **Cannot conduct meaningful lived experience testing** without functioning sandbox
+- Tight time windows create impossible planning constraints (finding testers, scheduling sessions)
+- Lack of realistic data means testing generic workflows, not real CNIB use cases
+- May be forced to test in vendor's demo environment (not configured for CNIB needs)
+
+**Example: Vendor Trial Access Problems**
+
+> **Scenario 1: 30-Day Trial Window**
+>
+> Vendor provides 30-day trial access for testing. Sounds reasonable, but:
+>
+> **Week 1**: Procurement finalizes trial agreement, vendor sets up trial account, credentials sent to Sheetal
+> **Week 2**: Sheetal does smoke testing, discovers major configuration issues, requests vendor support
+> **Week 3**: Vendor resolves configuration, but now only 10 days left. Sheetal needs to:
+> - Recruit internal testers (find staff with availability)
+> - Schedule testing sessions (coordinate multiple calendars)
+> - Conduct testing sessions (1-2 hours per tester)
+> - Analyze results and prepare report
+>
+> **Week 4**: Rush to complete testing before trial expires. Quality compromised due to time pressure.
+>
+> **Result**: Testing rushed, limited testers (whoever is available), incomplete scenarios.
+
+> **Scenario 2: No Sandbox Available**
+>
+> Vendor refuses sandbox access: "Sign contract first, then we'll provide training environment."
+>
+> **CNIB Position**: Need to test accessibility before purchase decision.
+> **Vendor Position**: Accessibility testing happens post-purchase during implementation.
+> **Result**: Procurement stalemate. CNIB forced to either:
+> - Accept vendor claims without validation (risky)
+> - Request formal ACR/VPAT (which vendor may not have or may be outdated)
+> - Decline to purchase (miss out on potentially suitable product)
+
+> **Scenario 3: Generic Demo Environment**
+>
+> Vendor provides access to generic demo environment shared across all trial customers.
+>
+> **Problems**:
+> - No CNIB-specific configuration (workflows don't match CNIB reality)
+> - Generic fake data (testers can't test realistic scenarios)
+> - Shared environment (other trial customers using it simultaneously, data mixed up)
+> - Demo scripted for sales, not accessibility testing (may not expose barriers)
+>
+> **Result**: Testing surface-level only, doesn't reflect actual CNIB usage.
+
+> **Scenario 4: Sandbox Available But Not Configured**
+>
+> Vendor provides sandbox, but it's empty (no data, no configuration).
+>
+> **Problem**: Who configures sandbox for testing?
+> - Vendor: "That's your job during implementation."
+> - CNIB IT: "We can't configure until we purchase."
+> - Sheetal: "I need realistic workflows to test, not empty forms."
+>
+> **Result**: Testing incomplete because workflows can't be simulated without configuration and data.
+
+**What AccessLabs Needs (But Doesn't Always Get)**:
+
+1. **Adequate Sandbox Access**
+   - Functioning test environment separate from production
+   - Configured to reflect CNIB's planned usage (not generic demo)
+   - Available for sufficient duration (not tight 30-day window)
+   - Renewable if testing discovers issues requiring vendor remediation and retest
+
+2. **Realistic Test Data**
+   - Sample data that reflects CNIB use cases (not generic "John Doe" examples)
+   - Multiple user accounts with different roles/permissions
+   - Workflows configured end-to-end (not just empty forms)
+   - Data volume sufficient to test performance with AT (not 3 sample records)
+
+3. **Vendor Support During Testing**
+   - Technical support available when testers encounter configuration issues
+   - Vendor accessibility team available for questions
+   - Ability to request configuration changes if testing exposes issues
+   - Documentation for testers (how to access, what credentials to use)
+
+4. **Flexible Testing Timeline**
+   - Sandbox access starts when CNIB is ready (after test scenarios defined, testers recruited)
+   - Duration accounts for realistic testing timeline (not arbitrary 30 days)
+   - Extension available if remediation and retesting needed
+   - No pressure to rush testing due to trial expiration
+
+**Challenge #3: Coordination Across Multiple Stakeholders**
+
+**The Reality**:
+- Vendor testing requires coordination between:
+  - **Requester** (department requesting purchase): Defines scope, provides test scenarios
+  - **Procurement**: Negotiates trial access, contract terms
+  - **IT**: Sets up network access, credentials, may configure sandbox
+  - **Sheetal/AccessLabs**: Conducts testing
+  - **Vendor**: Provides sandbox, technical support, responds to findings
+  - **Testers**: Staff with disabilities who conduct lived experience testing
+  - **Senior management**: Makes purchase decision based on testing results
+
+**Coordination Failures**:
+- Requester assumes AccessLabs knows what to test (no test scenarios provided)
+- Procurement negotiates trial without consulting AccessLabs on adequate duration
+- IT blocks sandbox access due to security policies (firewall, VPN requirements)
+- Vendor provides sandbox but no one told testers how to access it
+- Testers available Week 2, but sandbox not ready until Week 3
+- Testing finds critical barriers, but vendor not responsive during trial period
+- Trial expires before testing complete, no one requested extension in time
+
+**Example: What Often Happens**
+
+> **Week 1**: Department head sends Teams message to Sheetal: "We need this platform tested by Friday for procurement decision next week."
+>
+> **Reality Check**:
+> - Sheetal has never seen this platform
+> - No test scenarios provided
+> - No sandbox access yet (procurement still negotiating trial)
+> - Timeline unrealistic for lived experience testing
+> - Sheetal already has 3 other testing requests in queue
+>
+> **Outcome Options**:
+> 1. **Sheetal does quick smoke test only** (surface-level, no lived experience testing) - gives false confidence
+> 2. **Sheetal pushes back** (realistic timeline needed) - procurement frustrated, decision delayed
+> 3. **Sheetal rushes testing** (quality compromised, barriers missed) - risk of purchasing inaccessible product
+> 4. **Sheetal says no** (insufficient information/access) - department proceeds without accessibility testing
+>
+> All outcomes are suboptimal. Root cause: Lack of systematic process for vendor testing requests.
+
+**What Would Help (S2 Recommendations)**:
+
+1. **Standardized Vendor Testing Request Process** (Now: TopDesk Form)
+   - Required fields: What platform? What features will CNIB use? Who are the users?
+   - Minimum lead time: 2-4 weeks for comprehensive testing (not "by Friday")
+   - Test scenario template: Requester provides structured workflows
+   - Sandbox requirements checklist: What AccessLabs needs from vendor
+
+2. **Procurement Integration**
+   - **Before** initiating vendor trial, procurement consults AccessLabs on timeline and requirements
+   - Trial duration negotiated based on testing needs, not vendor's standard terms
+   - Sandbox access and support terms written into trial agreement
+   - Extension clause if testing discovers issues requiring remediation
+
+3. **Vendor Accountability in Contracts**
+   - Vendors must provide functional sandbox for accessibility testing
+   - Vendors must provide technical support during testing period
+   - Vendors must respond to accessibility findings within defined timeframe
+   - If vendor cannot provide adequate testing environment, formal ACR/VPAT required
+
+4. **Requester Responsibility**
+   - Requester provides clear scope definition and test scenarios
+   - Requester designates subject matter expert available during testing
+   - Requester understands testing timeline (not "by Friday")
+   - Requester involved in interpreting results (accessibility barriers vs. CNIB needs)
+
+5. **IT Coordination**
+   - IT looped in early for network access, security review
+   - Sandbox access not blocked by firewall/VPN issues
+   - Test user accounts created in advance
+   - IT available during testing window for technical issues
+
+**Why This Matters for Born Accessible Framework**:
+
+**Current State: Reactive and Fragile**
+- Testing happens at end of procurement process (vendor already selected)
+- Insufficient time, information, and access for quality testing
+- Coordination failures create gaps (no test scenarios, no sandbox, rushed timeline)
+- False confidence from surface-level testing, or no testing at all
+- Accessibility barriers discovered post-purchase (expensive remediation or abandonware)
+
+**Born Accessible State: Proactive and Systematic**
+- Accessibility testing planned at start of procurement process
+- Adequate time allocated (weeks, not days)
+- Test scenarios defined by requesters who know the business need
+- Sandbox access and vendor support negotiated upfront
+- Coordination built into process (not ad hoc scrambling)
+- Testing results inform purchase decision (before commitment)
+- Quality testing = fewer post-purchase surprises
+
+**SAP Concur as Case Study**:
+- Complex enterprise expense management platform
+- High learning curve (expense policies, approval workflows, reporting)
+- Testing identified significant accessibility barriers
+- But: Testing happened too late in process, after procurement decision largely made
+- **Lesson**: Earlier testing with clear scenarios and adequate sandbox access could have prevented purchase of inaccessible platform
+
+**Task Force Hope: Systematic Vendor Testing Process**
+
+One of Bob Dodd's hopes for Task Force (now partially realized with TopDesk form):
+- Structured intake process for vendor testing requests
+- Minimum lead times based on system complexity
+- Requester responsibilities (scope, scenarios, SME availability)
+- Procurement coordination (trial terms that enable quality testing)
+- Vendor accountability (sandbox access, support, responsiveness)
+- Clear communication about timeline reality (comprehensive testing takes time)
+
+**The TopDesk testing request form addresses some challenges**, but full solution requires:
+- Procurement policy integration (testing upfront, not afterthought)
+- Vendor contract templates (sandbox access requirements)
+- Requester education (what AccessLabs needs to test effectively)
+- Organization-wide understanding: Quality testing prevents expensive mistakes
+
+---
+
 ### 2. Vendor Update Testing
 
 **Purpose**: Ensure updates to existing platforms maintain or improve accessibility
