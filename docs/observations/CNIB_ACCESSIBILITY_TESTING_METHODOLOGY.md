@@ -476,11 +476,81 @@ CNIB employs two models of lived experience testing, both designed and executed 
 - TopDesk form is **direct outcome** of Task Force work
 - Sheetal's dual role: AccessLabs testing lead + S2 committee member ensures real-world expertise informs recommendations
 
+**Critical Concerns Driving S2 Formation** (Bob Dodd, Head of Accessibility at AccessLabs):
+
+Two major concerns about internal CNIB testing informed S2 Subcommittee work:
+
+**Concern #1: Scope of Testing**
+- **Current practice**: Testing asks "Do you think it will work for our existing blind and low vision staff?"
+- **Not comprehensive conformance**: Internal testing doesn't test to legal definition of accessibility conformance (AODA/WCAG)
+- **Sampling, not exhaustive**: Testing samples application features requested, seldom entire functionality
+- **Limited resources**: Testing done with limited time and resources
+- **Narrow disability focus**: Natural focus/bias on blind and low vision means not testing full range of accessibility issues
+- **Even within organization**: Testing doesn't cover all disabilities represented on AccessLabs testing team itself
+- **Not Sheetal's fault**: Result of what AccessLabs management (Bob as her manager) tells her to do given constraints
+
+**What Internal Testing Is**:
+- Valuable for procurement decisions ("will this work for our staff?")
+- Quick assessment of usability for blind/low vision users
+- Smoke testing with lived experience perspective
+- Helps CNIB make informed purchasing decisions
+
+**What Internal Testing Is NOT**:
+- Legal conformance statement (AODA/WCAG compliance audit)
+- Testing all features of product (only features CNIB uses)
+- Testing for full range of disabilities (focus on blind/low vision)
+- Guarantee of accessibility for all users
+- Formal accessibility audit with ACR/VPAT deliverable
+
+**Concern #2: Lack of Transparency Over What Gets Reported**
+- **Internal confusion**: CNIB staff sometimes use term "fully accessible" casually as shorthand
+- **External risk**: Concern that vendors may interpret CNIB's "it works for us" as conformance statement
+- **Vendor communication**: Fear that vendor tells other customers "CNIB said our tool is fully accessible" when CNIB never tested comprehensively
+- **Reputational risk**: Could come back to bite CNIB if vendor makes false claims based on limited CNIB testing
+- **Legal implications**: "Fully accessible" has legal meaning (AODA/WCAG conformance); casual use could create liability
+- **No standardized reporting**: No clear framework for what language to use internally vs. externally
+
+**Example: Mercer**:
+- CNIB uses Mercer platform
+- Never tested Mercer against AODA/WCAG standards
+- Staff may say "works for us" or even "fully accessible"
+- Legally, "fully accessible" would mean conformance statement on ALL features (not just ones CNIB uses) for ALL disabilities (not just blind/low vision)
+- Gap between internal shorthand and external legal/professional standards
+
+**Communication with Senior Management**:
+- Bob Dodd raised concerns with senior CNIB leadership (Finance area)
+- Explained difference between "works for our staff" vs. "fully accessible" (legal conformance)
+- Clarified scope and limitations of internal testing
+- Emphasized need for clear definitions, especially when dealing with external vendors
+- Senior leadership receptive: committed to involving AccessLabs in future platform assessments
+- Concerns fed directly into S2 Subcommittee formation
+
+**How S2 Addresses These Concerns**:
+
+**S2 Recommendation: Standardized Testing Protocol**
+- Document what each testing level means (Approaches #1-5)
+- Clear language for each: "smoke tested with blind/low vision staff" vs. "WCAG 2.1 AA conformant"
+- Standardized reporting templates with appropriate disclaimers
+- Internal vs. external communication guidelines
+
+**S2 Recommendation: Vendor Accountability Framework**
+- Clear contracts stating what CNIB testing does and doesn't cover
+- Vendor prohibited from misrepresenting CNIB testing results
+- Formal ACR/VPAT required from vendor (not just CNIB internal testing)
+- Documentation of what CNIB tested vs. what vendor claims
+
+**S2 Recommendation: Capacity and Resources**
+- Acknowledge current testing has resource constraints
+- Justify additional AccessLabs capacity for comprehensive testing when stakes are high
+- Clear decision framework: when is internal testing sufficient vs. when is formal audit needed?
+
 **Born Accessible Principle**:
 - Systematic intake processes = accessibility as infrastructure, not afterthought
 - Tracking and visibility = accountability and continuous improvement
 - Structured requests = realistic timelines, quality testing, sustainable workload
 - Data-driven decisions = evidence-based resource allocation
+- **Honest assessment of limitations** = integrity and risk management
+- **Clear communication standards** = professionalism and legal protection
 
 ### Implications for Task Force Recommendations
 
