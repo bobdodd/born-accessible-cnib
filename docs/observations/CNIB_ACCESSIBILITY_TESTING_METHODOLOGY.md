@@ -49,6 +49,12 @@ CNIB employs five distinct testing approaches, differing in formality, methodolo
 - Not comprehensive—designed to catch "deal-breakers" quickly
 - Typically 1-2 hours
 
+**Who Tests**:
+- Generally lived experience based testing (staff with disabilities using their own AT)
+- Sometimes sighted or partially sighted staff testing with screen readers that are not part of their normal lived experience
+- May use professional AccessLabs staff for technical assessment
+- Mixed approach: authentic lived experience + technical expertise
+
 **Purpose**:
 - Determine if product warrants deeper testing
 - Catch major issues early in procurement/development
@@ -166,6 +172,147 @@ One of Bob Dodd's primary hopes for Accessibility Task Force: **Address document
 - Accessible templates + trained creators = prevention
 - Evidential testing = accountability and learning
 - Systematic remediation = continuous improvement
+
+---
+
+#### Critical Differences: Internal vs. External Testing Practices
+
+Before detailing the two models of lived experience testing, it's essential to understand **how internal testing differs from external paid testing** in practice at CNIB. These differences significantly impact testing quality, breadth, and representativeness.
+
+**1. Scope of Testing: Features Tested**
+
+**Internal Testing (Approach #3a)**:
+- **Tests only features CNIB expects to use** within the organization
+- Not comprehensive testing of all vendor features
+- Focused on specific workflows relevant to CNIB staff needs
+- Example: ADP Recruitment Module tested only for HR staff workflows, not all recruitment features
+
+**External Paid Testing (Approach #3b)**:
+- **Tests broader feature set**, especially for client-facing products
+- Comprehensive coverage of user-facing functionality
+- Not limited to what CNIB staff will use
+- Example: Client portal tested for all public-facing features, not just internal admin view
+
+**Why This Matters**:
+- Internal testing gives "will this work for us?" answer
+- External testing gives "is this accessible for diverse users?" answer
+- Procurement decisions based on internal testing may miss barriers for broader user base
+
+**2. Resource Allocation: Number of Testers and Time**
+
+**Internal Testing (Approach #3a)**:
+- **Fewer testers** due to cost constraints (points budget)
+- **Less time per test** due to timing pressures (unreasonable short timescales)
+- Typical: 1-3 testers, 1-2 hours each
+- "Bare minimum" approach driven by budget and timeline
+
+**External Paid Testing (Approach #3b)**:
+- **More testers** for diverse representation
+- **More time per test** for comprehensive evaluation
+- Typical: 3-5+ testers, longer test sessions
+- Investment matches stakes (client-facing, revenue-generating products)
+
+**Why This Matters**:
+- Fewer testers = less diversity of experience captured
+- Less time = less depth, may miss issues that emerge with extended use
+- Resource constraints on internal testing limit quality and breadth
+
+**3. Tester Pool: Freshness and Professionalization**
+
+**Internal Testing (Approach #3a)**:
+- **Re-uses same testers over and over again**
+- Same staff testers become familiar faces for AccessLabs
+- **"Professional testers in practice"** because used so frequently
+- Testers develop expertise in testing itself, not just AT use
+- Narrow range of lived experience (same people, same AT configurations, same perspectives)
+
+**External Paid Testing (Approach #3b)**:
+- **Strives for "freshness"** with non-professional testers
+- Recruits diverse external testers from broader community
+- Less likely to re-use same testers repeatedly
+- Testers bring external perspective, not CNIB-insider knowledge
+- Broader range of lived experience
+
+**Why "Professional Testers in Practice" Is Double-Edged**:
+
+**Not Necessarily Bad**:
+- Experienced internal testers know what to look for
+- Efficient testing (less time explaining what to do)
+- Familiar with CNIB systems and context
+- Reliable and available
+- Develop testing skills that complement AT expertise
+
+**But Creates Limitations**:
+- **Familiarity bias**: Experienced testers may unconsciously work around barriers that would stop new users
+- **Narrow lived experience**: Same testers = same AT configurations, same interaction patterns, same cognitive models
+- **Less "fresh eyes"**: May miss issues obvious to first-time users
+- **Professionalization effect**: Testing becomes job, not authentic user experience
+- **Diversity gap**: Small pool of repeat testers limits disability representation
+
+**Example: Internal Tester Familiarity**
+
+> **Experienced internal tester**: "I found a workaround for that navigation issue. You just need to press Tab five times and then Shift+Arrow. It's annoying but works."
+>
+> **First-time external tester**: "I can't figure out how to get to that section. I tried Tab but ended up somewhere else. I gave up after a few tries."
+>
+> **Result**: Internal tester reports "works with workaround" (severity: minor). External tester reports "can't complete task" (severity: critical). Both are correct from their perspective, but internal tester's familiarity masks severity for new users.
+
+**4. Context and Bias**
+
+**Internal Testing (Approach #3a)**:
+- Testers are CNIB employees (institutional knowledge)
+- May be more forgiving of CNIB systems ("we're trying our best")
+- Understand CNIB context, mission, constraints
+- Testing systems where they work (potential privacy concerns)
+
+**External Paid Testing (Approach #3b)**:
+- Testers have no CNIB affiliation (unbiased perspective)
+- Hold CNIB to same standards as any other organization
+- Don't know internal context or constraints
+- External perspective reflects real user expectations
+
+**Why This Matters**:
+- Internal testers may unconsciously minimize severity due to organizational loyalty
+- External testers provide honest assessment without insider bias
+- Client-facing products need external perspective to reflect real user expectations
+
+**5. Summary: When Each Approach Is Appropriate**
+
+**Use Internal Testing (Approach #3a) When**:
+- System is staff-only (not public-facing)
+- Testing specific features CNIB staff will use
+- Budget/timeline constraints require cost-effective approach
+- Internal context knowledge is valuable
+- Procurement decision needs quick "will this work for us?" answer
+
+**Use External Paid Testing (Approach #3b) When**:
+- System is client-facing or public-facing
+- Need unbiased external perspective
+- Comprehensive feature testing required (not just CNIB use cases)
+- Need "freshness" of non-professional testers
+- Stakes are high (legal, reputational, revenue)
+- Broader disability representation needed
+- Testing for diverse AT/device/browser configurations
+
+**Use Both When**:
+- Hybrid systems (internal and external interfaces)
+- High-stakes internal systems requiring comprehensive testing
+- Need both "will this work for us?" AND "is this accessible for diverse users?"
+
+**The Reality**:
+- Internal testing is **not inferior**, but it has **different strengths and limitations**
+- Cost and timing pressures often drive internal testing choices
+- Resource constraints limit breadth (fewer testers, less time, narrower scope)
+- Repeat tester use creates professionalization that is both helpful and limiting
+- External testing provides freshness and breadth that internal testing cannot
+
+**Task Force Hope**:
+- Organizational clarity on when internal testing is sufficient vs. when external testing is necessary
+- Realistic budgets and timelines for comprehensive external testing
+- Expanded internal tester pool to reduce over-reliance on same individuals
+- Clear communication about limitations of internal testing (not "fully accessible", but "works for our staff")
+
+---
 
 #### 3a. Internal Staff Testers (Compensated with Points)
 
