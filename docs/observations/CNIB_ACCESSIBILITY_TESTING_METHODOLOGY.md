@@ -8,9 +8,9 @@ Accessibility testing at CNIB occurs in multiple contexts for different purposes
 
 ---
 
-## CNIB Testing Structure: Four Primary Approaches
+## CNIB Testing Structure: Five Primary Approaches
 
-CNIB employs four distinct testing approaches, differing in formality, methodology, and organizational ownership:
+CNIB employs five distinct testing approaches, differing in formality, methodology, and organizational ownership:
 
 ### 1. Informal Siloed Testing by Staff (Distributed, Not AccessLabs)
 
@@ -175,9 +175,112 @@ CNIB employs two models of lived experience testing, both designed and executed 
 
 ---
 
+### 5. Developer Assistance Package (AccessLabs-Supported Throughout Project Lifecycle)
+
+**Description**: Comprehensive accessibility support embedded throughout internal project development, from concept to UAT (User Acceptance Testing)
+
+**What It Is**:
+- AccessLabs partners with internal project teams from initial concept through launch
+- Proactive accessibility integration, not reactive testing
+- Direct interface with external third-party developers (contracted by CNIB)
+- On-demand accessibility expertise and testing throughout development
+
+**Typical Project Context**:
+- CNIB contracts external developers to build new platforms, apps, or features
+- Custom development projects (not off-the-shelf vendor products)
+- Internal systems requiring extensive customization
+- Client-facing digital products developed for CNIB
+
+**AccessLabs Role Throughout Lifecycle**:
+
+**Phase 1: Concept and Planning**
+- Attend project kickoff meetings
+- Review initial requirements and user stories
+- Provide accessibility requirements documentation
+- Advise on accessible design patterns and frameworks
+- Identify potential accessibility risks early
+
+**Phase 2: Design**
+- Review wireframes and mockups for accessibility
+- Inspect design prototypes (Figma, Adobe XD, etc.)
+- Provide feedback on color contrast, layout, navigation patterns
+- Advise on accessible UI components and interactions
+- Ensure designers understand WCAG requirements
+- Attend design review meetings
+
+**Phase 3: Development**
+- Provide access to lived experience testing on demand for developers
+- Review code commits/pull requests for accessibility issues
+- Test incremental builds (not waiting until final product)
+- Interface directly with developers via meetings and AccessLabs portal
+- Provide technical guidance on ARIA, semantic HTML, keyboard interactions
+- Offer code examples and implementation patterns
+
+**Phase 4: Testing and Remediation**
+- Conduct formal testing (smoke tests, lived experience testing, audits)
+- Document findings in AccessLabs online portal
+- Provide login access to developers for test results
+- Screen recordings and detailed evidence available through portal
+- Remediation support: issues can be retested on demand
+- Track remediation progress through portal
+
+**Phase 5: UAT and Launch**
+- Final comprehensive testing before production launch
+- User acceptance testing with lived experience testers
+- Go/no-go recommendation
+- Post-launch monitoring and support
+
+**AccessLabs Online Portal**:
+- **Test Results Dashboard**: Developers log in to view findings
+- **Screen Recordings**: Video evidence of barriers with assistive technology
+- **Issue Tracking**: Each barrier tracked with status (open, in progress, fixed, retested)
+- **On-Demand Retesting**: Developers request retest when fix deployed
+- **Historical Record**: All testing iterations documented
+- **Evidence Package**: Screenshots, code samples, WCAG references
+- **Communication Hub**: Comments and questions on specific issues
+
+**Communication Channels**:
+- **Regular meetings**: Scheduled check-ins with development team
+- **Portal-based feedback**: Asynchronous communication through online portal
+- **Direct developer interface**: AccessLabs works directly with external developers
+- **Project documentation**: Accessibility requirements and guidance documents
+- **Code reviews**: Inline feedback on implementation
+
+**Benefits of Developer Assistance Package**:
+- **Shift-left accessibility**: Catch issues early when cheaper/easier to fix
+- **Reduced remediation costs**: Fix during development, not after launch
+- **Developer education**: External developers learn accessible development practices
+- **Quality assurance**: Continuous testing throughout lifecycle
+- **On-demand support**: Testing when developers need it, not waiting for scheduled audit
+- **Transparent tracking**: Portal provides visibility for all stakeholders
+- **Iterative improvement**: Retest on demand enables rapid fix cycles
+
+**Typical Use Cases**:
+- **MyCNIB application**: Major update to how staff, clients, and volunteers discover CNIB programs, services, and information on vision health and assistive technology
+- New CNIB mobile app developed by contracted agency
+- Custom donor management platform built by external developers
+- Client portal requiring extensive accessibility features
+- Internal systems with complex workflows and interactions
+- Projects where accessibility is mission-critical from start
+
+**Compensation/Resourcing**:
+- Internal CNIB projects: AccessLabs time allocated as internal support
+- External client projects: AccessLabs involvement billed as part of development contract
+- Developer Assistance Package may be requirement in contracts with external developers
+
+**Organizational Ownership**: AccessLabs (design, execution, coordination throughout)
+
+**Key Distinction from Other Approaches**:
+- Not one-time testing at end (like formal audit)
+- Not ad hoc (like informal testing)
+- Embedded throughout development lifecycle (born accessible principle in practice)
+- Proactive accessibility integration, not reactive remediation
+
+---
+
 ## Key Insight: AccessLabs as Central Testing Function
 
-**Critical Understanding**: All formal testing at CNIB—smoke tests, lived experience testing, and professional audits—is **designed and executed by AccessLabs**, not distributed across organization.
+**Critical Understanding**: All formal testing at CNIB—smoke tests, lived experience testing, professional audits, and developer assistance—is **designed and executed by AccessLabs**, not distributed across organization.
 
 ### What This Means
 
@@ -199,6 +302,13 @@ CNIB employs two models of lived experience testing, both designed and executed 
 - Only informal siloed testing by staff (approach #1) happens outside AccessLabs
 - This is precisely what Task Force identified as problematic—lack of structure and consistency
 - Task Force goal: Bring more structure to internal testing while preserving AccessLabs professional standards
+
+**Developer Assistance Package (Approach #5)**:
+- Represents born accessible principle in action: accessibility embedded from concept, not bolted on at end
+- AccessLabs becomes development partner, not just auditor
+- Online portal enables continuous collaboration between AccessLabs and developers
+- On-demand testing throughout lifecycle (design, development, UAT)
+- Example: MyCNIB application development with external contractors
 
 ### Implications for Task Force Recommendations
 
@@ -729,6 +839,7 @@ CNIB employs a spectrum of testing methodologies ranging from informal/rapid to 
 | **#3a: Lived Experience (Internal)** | Staff testers, compensated with points | CNIB staff with AT | 1-2 hrs × 3-5 staff | AccessLabs | User testing report |
 | **#3b: Lived Experience (External)** | External paid testers (non-professional) | External users with AT | 1-2 hrs × 3-5 users | AccessLabs | User testing report |
 | **#4: Formal Audit** | Comprehensive WCAG conformance audit | AccessLabs professional auditors | 40-80+ hours | AccessLabs | ACR/VPAT + comprehensive report |
+| **#5: Developer Assistance** | Embedded accessibility support throughout development lifecycle | AccessLabs + project team + external developers | Ongoing (weeks to months) | AccessLabs | Portal access, iterative testing, remediation tracking, final approval |
 
 ### Relationship to Previous "Level" Framework
 
@@ -740,8 +851,17 @@ The previous "Level 0-4" framework is useful for understanding rigor spectrum, b
 - **Level 2** = Approach #2 (Smoke Test) or part of Approach #4 (expert review component)
 - **Level 3** = Approach #3a or #3b (Lived Experience Testing)
 - **Level 4** = Approach #4 (Formal Audit)
+- **Approach #5** doesn't map to single level—it combines multiple levels throughout project lifecycle
 
-**Key Difference**: In actual CNIB practice, Approaches #2-4 are all AccessLabs-designed and executed, not distributed across organization.
+**Key Difference**: In actual CNIB practice, Approaches #2-5 are all AccessLabs-designed and executed, not distributed across organization.
+
+**Developer Assistance Package as Born Accessible Model**:
+- Approach #5 represents shift-left accessibility: prevention rather than remediation
+- Combines multiple testing levels at appropriate project phases
+- Design phase: Expert review (like Level 2)
+- Development: On-demand user testing (like Level 3) + expert guidance
+- UAT: Formal testing (like Level 4)
+- Not a testing "level" but a comprehensive accessibility partnership model
 
 ---
 
@@ -828,7 +948,15 @@ The previous "Level 0-4" framework is useful for understanding rigor spectrum, b
 - **May include**: Approaches #3a or #3b as validation component
 - **Typical use**: Commercial engagements, legal compliance, high-stakes procurement
 
-**Key Principle**: AccessLabs is the professional testing function for all formal testing (Approaches #2-4). Task Force challenge is connecting staff needs to AccessLabs capacity efficiently.
+**Approach #5: Developer Assistance Package**:
+- **Who**: AccessLabs accessibility specialists + internal project team + external developers
+- **Coordinated by**: AccessLabs project managers
+- **Duration**: Throughout project lifecycle (concept to UAT)
+- **Portal access**: Developers log in to AccessLabs online portal for test results
+- **Incorporates**: Approaches #2, #3a/3b, and #4 at appropriate project phases
+- **Typical use**: Internal custom development projects, especially with external contractors (e.g., MyCNIB application)
+
+**Key Principle**: AccessLabs is the professional testing function for all formal testing (Approaches #2-5). Task Force challenge is connecting staff needs to AccessLabs capacity efficiently.
 
 ---
 
@@ -841,6 +969,14 @@ Testing throughout lifecycle prevents expensive post-launch remediation:
 - **Development**: Level 1-2 automated testing in CI/CD, manual spot checks
 - **Pre-launch**: Level 2-3 comprehensive testing before release
 - **Post-launch**: Ongoing monitoring and user feedback
+
+**Developer Assistance Package (Approach #5) as Born Accessible Exemplar**:
+- Embeds accessibility from project conception, not bolted on at end
+- Prevents barriers through design and code review, not just finding them post-development
+- "Shift-left" approach: catch issues when cheapest and easiest to fix
+- On-demand testing throughout development enables rapid iteration
+- Educates external developers, building capacity beyond CNIB
+- MyCNIB application: Accessibility integrated throughout, not retrofitted after launch
 
 ### Vendor Accountability
 
