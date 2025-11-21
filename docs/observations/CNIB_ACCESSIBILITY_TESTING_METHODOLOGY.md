@@ -8,6 +8,105 @@ Accessibility testing at CNIB occurs in multiple contexts for different purposes
 
 ---
 
+## Born Accessible Framework: Understanding CNIB Testing Through Research Lens
+
+This document analyzes CNIB's accessibility testing methodology through the **Born Accessible framework** developed by Dr. Jonathan Lazar (University of Maryland, Director of Trace Research & Development Center).
+
+### What Is "Born Accessible"?
+
+> "Accessibility should not be bolted on afterwards but rather be an initial quality already from the first publication of information."
+> — Dr. Jonathan Lazar
+
+**Core Principle**: Accessibility must be embedded from inception in design, development, and operations—not retrofitted after deployment.
+
+**Key Concepts**:
+- **Prevention over remediation**: Catching barriers early is cheaper and more effective than fixing them post-launch
+- **Systematic integration**: Accessibility in all phases of development lifecycle, not just final testing
+- **Continuous journey**: Not a destination or one-time compliance project, but ongoing commitment
+- **Honest assessment**: Willingness to identify and address gaps, even in accessibility-focused organizations
+
+### Why Born Accessible Matters for CNIB Testing
+
+CNIB was literally **born accessible** in 1918, founded to serve blinded WWI veterans. Yet the Accessibility Task Force's existence proves that **born accessible is continuous work, not a static achievement**.
+
+This document examines how CNIB's testing practices:
+- ✅ **Exemplify born accessible principles** (Developer Assistance Package, evidential testing, lived experience leadership)
+- ⚠️ **Reveal gaps** (reactive vendor testing, limited disability representation, informal processes)
+- 🎯 **Provide opportunities** (systematic intake, procurement integration, expanded tester diversity)
+
+### Dr. Lazar's 10 Born Accessible Principles: Relevance to Testing
+
+Throughout this document, we reference Dr. Lazar's 10 organizational accessibility principles. Here's how they map to testing:
+
+#### Principle #1: Accessibility as Core Value
+**Relevance to Testing**: Testing validates organizational commitment. If accessibility is truly core value, testing happens **before** deployment, not after complaints.
+- ✅ CNIB: AccessLabs dedicated testing function
+- ⚠️ Gap: Informal staff testing uncoordinated, vendor testing often reactive
+
+#### Principle #2: Leadership Commitment
+**Relevance to Testing**: Executive support for adequate testing resources, realistic timelines, consequences for inaccessible deployments.
+- ✅ CNIB: TopDesk form result of Task Force work (executive sponsorship)
+- ⚠️ Gap: "Test by Friday" requests persist despite resource constraints
+
+#### Principle #3: Inclusive Hiring and Employment
+**Relevance to Testing**: Internal testers represent diverse disabilities, accessibility testing jobs compensated fairly.
+- ✅ CNIB: Points system compensates staff testers, external paid testing
+- ⚠️ Gap: Internal testing uses only blind/low vision testers (narrow disability representation)
+
+#### Principle #4: Procurement and Vendor Management
+**Relevance to Testing**: Vendors required to provide sandbox access, testing happens **before** purchase, accessibility in contracts.
+- ✅ CNIB: Sheetal's research influenced national procurement standards
+- ⚠️ Gap: SAP Concur purchased despite accessibility barriers, testing too late in process
+
+#### Principle #5: Training and Capacity Building
+**Relevance to Testing**: Testers trained in evidential testing methodology, requesters understand what AccessLabs needs.
+- ✅ CNIB: AccessLabs professional testing methodology
+- ⚠️ Gap: Requesters don't provide test scenarios, internal testers over-professionalized
+
+#### Principle #6: User Involvement and Co-Design
+**Relevance to Testing**: People with disabilities conduct testing (lived experience), not just technical audits.
+- ✅ CNIB: Lived experience testing central (Approach #3), "Nothing About Us Without Us"
+- ⚠️ Gap: Narrow to blind/low vision, excludes Deaf/Deafblind, mobility, cognitive disabilities
+
+#### Principle #7: Integrated Processes
+**Relevance to Testing**: Testing throughout development lifecycle (design, development, UAT), not just at end.
+- ✅ CNIB: Developer Assistance Package (Approach #5) embeds testing from concept
+- ⚠️ Gap: Vendor testing reactive (after selection), internal testing siloed
+
+#### Principle #8: Monitoring and Continuous Improvement
+**Relevance to Testing**: Testing results tracked, trends analyzed, remediation verified, retesting on demand.
+- ✅ CNIB: AccessLabs portal tracks iterations, TopDesk form enables metrics
+- ⚠️ Gap: No psychologically safe barrier reporting, Salesforce sales-level only
+
+#### Principle #9: Legal and Compliance Framework
+**Relevance to Testing**: Testing distinguishes "works for our staff" from "AODA/WCAG conformant", clear communication.
+- ✅ CNIB: Bob Dodd's concerns re: scope transparency driving S2 work
+- ⚠️ Gap: Casual "fully accessible" language despite limited testing scope
+
+#### Principle #10: Social Model of Disability
+**Relevance to Testing**: Testing identifies barriers in design (not user deficits), testers compensated for expertise.
+- ✅ CNIB: Points/payment for testers, focus on fixing barriers not "accommodating" users
+- ⚠️ Gap: Limited resources treat diverse disability testing as "extra" not baseline
+
+### How This Document Is Organized
+
+Each section of this document includes:
+1. **Current Practice**: What CNIB/AccessLabs actually does
+2. **Born Accessible Analysis**: How practice aligns with or diverges from framework principles
+3. **Task Force Hope**: Bob Dodd's recommendations for S2 Subcommittee
+4. **Maturity Progression**: Journey from current state to born accessible ideal
+
+**Key Theme**: CNIB excels at accessibility for blind/low vision users but faces **systematic gaps** that born accessible framework helps identify:
+- **Reactive vs. Proactive**: Testing happens too late (vendor already selected, system already built)
+- **Narrow vs. Broad**: Testing only blind/low vision, not full disability diversity
+- **Informal vs. Systematic**: Request intake chaotic, no standardized processes
+- **Remediation vs. Prevention**: Fixing barriers post-launch instead of preventing during design
+- **Fragmented vs. Integrated**: Testing siloed in AccessLabs, not organization-wide culture
+
+**The Opportunity**: By explicitly adopting born accessible thinking, CNIB can become **THE case study** for how established accessibility organizations maintain systematic accessibility at scale.
+
+---
+
 ## CNIB Testing Structure: Five Primary Approaches
 
 CNIB employs five distinct testing approaches, differing in formality, methodology, and organizational ownership:
