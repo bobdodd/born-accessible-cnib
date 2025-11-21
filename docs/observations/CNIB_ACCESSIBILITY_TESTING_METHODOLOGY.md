@@ -4,6 +4,213 @@
 
 Accessibility testing at CNIB occurs in multiple contexts for different purposes, with varying levels of formality, scope, and expertise depending on the situation. This document outlines the various testing scenarios, methodologies, and levels of rigor applied across CNIB and CNIB AccessLabs.
 
+**Important Note**: This document represents evolving understanding. Testing practices at CNIB are more structured than initially documented, with most formal testing (all except informal staff testing) falling under AccessLabs for design and execution.
+
+---
+
+## CNIB Testing Structure: Four Primary Approaches
+
+CNIB employs four distinct testing approaches, differing in formality, methodology, and organizational ownership:
+
+### 1. Informal Siloed Testing by Staff (Distributed, Not AccessLabs)
+
+**Description**: Individual CNIB staff members test content or platforms using their own assistive technology, often in response to immediate needs
+
+**Characteristics**:
+- Conducted by any staff member, not coordinated centrally
+- Often siloed (findings may not be shared beyond immediate context)
+- No standardized methodology or reporting
+- Quick and responsive but inconsistent
+- Documented in Task Force feedback as problematic pattern
+
+**Examples**:
+- Staff member opens PDF, notices it doesn't work with screen reader, reports to document creator
+- Team member tests internal form with keyboard navigation, finds issues
+- Manager reviews PowerPoint with magnification, provides feedback
+
+**Organizational Ownership**: Distributed (not AccessLabs)
+
+**Challenge**: Identified by Task Force as gap—lack of consistency, documentation, and systemic learning
+
+---
+
+### 2. Smoke Testing (AccessLabs-Designed and Executed)
+
+**Description**: Quick, focused testing to verify basic functionality and catch major accessibility issues before deeper testing
+
+**Context**:
+- **Internally developed products**: CNIB-created software, themes, customizations
+- **External third-party apps and websites**: Vendor products, platforms, partner sites
+
+**Methodology**:
+- Rapid pass-through key user workflows
+- Check critical accessibility features (keyboard navigation, screen reader basics, color contrast)
+- Automated testing tools for quick scan
+- Not comprehensive—designed to catch "deal-breakers" quickly
+- Typically 1-2 hours
+
+**Purpose**:
+- Determine if product warrants deeper testing
+- Catch major issues early in procurement/development
+- Quick go/no-go assessment
+- Triage to appropriate testing level
+
+**Organizational Ownership**: AccessLabs (design and execution)
+
+**Typical Output**: Brief report or verbal feedback—"proceed with deeper testing" or "major barriers, do not proceed"
+
+---
+
+### 3. Lived Experience Accessibility Testing (AccessLabs-Designed and Executed)
+
+CNIB employs two models of lived experience testing, both designed and executed by AccessLabs:
+
+#### 3a. Internal Staff Testers (Compensated with Points)
+
+**Description**: CNIB staff with disabilities test products/services using their assistive technology
+
+**Compensation Model**: "Points" system
+- Staff earn points for testing participation
+- Points redeemable for gifts from catalogue
+- Points system used across CNIB for various recognition and participation activities
+- Not cash payment but tangible compensation
+
+**Tester Profile**:
+- CNIB employees who use assistive technology
+- Diverse disabilities represented (blind, low vision, Deafblind, other disabilities)
+- Real users, not professional testers
+- Using their own AT in authentic contexts
+
+**Testing Approach**:
+- Task-based scenarios (realistic workflows)
+- Think-aloud protocol (narrate experience)
+- Document barriers, frustrations, workarounds
+- User perspective on severity and impact
+
+**Advantages**:
+- Authentic CNIB staff perspective
+- Already familiar with CNIB context and needs
+- Available and accessible
+- Cost-effective (points vs. external recruitment)
+
+**Considerations**:
+- Staff capacity (testing on top of regular duties)
+- Potential bias (employees may be more forgiving)
+- Privacy (testing internal systems where they work)
+
+**Organizational Ownership**: AccessLabs (design and execution)
+
+---
+
+#### 3b. External Paid Testers (Non-Professional Regular Users)
+
+**Description**: External individuals with disabilities recruited and paid to test products/services
+
+**Compensation Model**: Paid (cash or equivalent)
+- Not professional accessibility testers by trade
+- Regular users of assistive technology
+- Compensated for time and expertise
+- Rates appropriate for user testing participation
+
+**Tester Profile**:
+- People with disabilities from broader community
+- Diverse disabilities, assistive technologies, experience levels
+- Not CNIB employees (external perspective)
+- Real users, not consultants or auditors
+
+**Testing Approach**:
+- Task-based scenarios
+- Think-aloud protocol
+- Document user experience, not just technical compliance
+- Focus on usability and impact
+
+**Advantages**:
+- External unbiased perspective
+- Don't know CNIB context/workarounds (fresh eyes)
+- Can test client-facing products without employee bias
+- Broader representation beyond CNIB staff
+
+**Considerations**:
+- Recruitment and coordination overhead
+- Payment/contracting requirements
+- May need more context/training than internal staff
+- Scheduling complexity
+
+**Organizational Ownership**: AccessLabs (design and execution)
+
+---
+
+### 4. Formal Audits by Professional Auditors (AccessLabs)
+
+**Description**: Comprehensive WCAG conformance audits conducted by professional accessibility auditors
+
+**Auditor Profile**:
+- AccessLabs professional staff
+- IAAP certification or equivalent expertise
+- Trained in WCAG standards, testing methodologies, assistive technology
+- Professional auditors, not just users
+
+**Methodology**:
+- Comprehensive WCAG 2.1 evaluation (all applicable success criteria)
+- Automated testing baseline
+- Manual expert review with multiple assistive technologies
+- Code-level inspection
+- May include lived experience testing (3a or 3b) as validation
+- Professional report with ACR/VPAT
+
+**Deliverables**:
+- Accessibility Conformance Report (ACR)
+- Detailed findings with WCAG violations
+- Severity ratings and remediation recommendations
+- Executive summary
+- Code samples and implementation guidance
+
+**Context**:
+- AccessLabs commercial client engagements
+- High-stakes internal projects requiring formal conformance
+- Legal compliance requirements
+- Partnership due diligence requiring professional opinion
+
+**Organizational Ownership**: AccessLabs (design and execution)
+
+---
+
+## Key Insight: AccessLabs as Central Testing Function
+
+**Critical Understanding**: All formal testing at CNIB—smoke tests, lived experience testing, and professional audits—is **designed and executed by AccessLabs**, not distributed across organization.
+
+### What This Means
+
+**AccessLabs Role**:
+- Professional testing methodology
+- Quality control and consistency
+- Tester recruitment and coordination (both internal staff and external)
+- Reporting standards
+- Expertise and training
+- Tools and infrastructure
+
+**Not Ad Hoc**:
+- Testing is not random staff members testing randomly
+- Even "informal" lived experience testing has AccessLabs methodology and oversight
+- Smoke tests follow consistent approach
+- Professional standards apply
+
+**Exception**:
+- Only informal siloed testing by staff (approach #1) happens outside AccessLabs
+- This is precisely what Task Force identified as problematic—lack of structure and consistency
+- Task Force goal: Bring more structure to internal testing while preserving AccessLabs professional standards
+
+### Implications for Task Force Recommendations
+
+**Systems & Technology Subcommittee S2** (Standardized Testing Protocol) should:
+- Partner with AccessLabs to document existing methodologies (don't reinvent)
+- Extend AccessLabs protocols to internal testing requests
+- Create clear pathways for staff to request AccessLabs testing
+- Define when informal testing is appropriate vs. when AccessLabs involvement needed
+- Integrate AccessLabs approaches with Accessibility Hub intake
+
+**Not starting from scratch**: AccessLabs has professional methodologies that work. Challenge is making them accessible and known across organization.
+
 ---
 
 ## Testing Contexts: Why CNIB Tests
@@ -513,15 +720,28 @@ CNIB employs a spectrum of testing methodologies ranging from informal/rapid to 
 
 ---
 
-## Testing Tier Summary Table
+## Testing Tier Summary Table (Revised with Organizational Ownership)
 
-| Level | Name | Who | Time | Cost | Appropriate For | Output |
-|-------|------|-----|------|------|-----------------|--------|
-| **0** | Basic Informal | Any AT user | 5-15 min | Free | Quick checks, drafts | Verbal feedback |
-| **1** | Structured Informal | Multiple AT users | 30-60 min | Low | Internal docs, rapid feedback | Simple report |
-| **2** | Formalized Structured | Accessibility specialists | 4-8 hours | Medium | Procurement, partnerships, moderate stakes | Professional report |
-| **3** | Lived Experience | Real users with disabilities | 1-2 hrs × 3-5 people | Medium-High | High-stakes, client-facing | User testing report |
-| **4** | Formal Conformance | Professional auditors | 40-80+ hours | High | Legal compliance, WCAG certification | ACR/VPAT + comprehensive audit |
+| CNIB Approach | Description | Who | Time | Org Ownership | Output |
+|---------------|-------------|-----|------|---------------|--------|
+| **#1: Informal Siloed** | Staff test with own AT, ad hoc | Any AT user | 5-15 min | Distributed (not AccessLabs) | Verbal/email feedback |
+| **#2: Smoke Test** | Quick verification of basic accessibility | AccessLabs staff | 1-2 hours | AccessLabs | Brief go/no-go report |
+| **#3a: Lived Experience (Internal)** | Staff testers, compensated with points | CNIB staff with AT | 1-2 hrs × 3-5 staff | AccessLabs | User testing report |
+| **#3b: Lived Experience (External)** | External paid testers (non-professional) | External users with AT | 1-2 hrs × 3-5 users | AccessLabs | User testing report |
+| **#4: Formal Audit** | Comprehensive WCAG conformance audit | AccessLabs professional auditors | 40-80+ hours | AccessLabs | ACR/VPAT + comprehensive report |
+
+### Relationship to Previous "Level" Framework
+
+The previous "Level 0-4" framework is useful for understanding rigor spectrum, but actual CNIB structure is:
+
+**Previous Levels → Actual CNIB Approaches**:
+- **Level 0** = Approach #1 (Informal Siloed Testing)
+- **Level 1** = Could be Approach #1 (if more structured) or Approach #2 (Smoke Test)
+- **Level 2** = Approach #2 (Smoke Test) or part of Approach #4 (expert review component)
+- **Level 3** = Approach #3a or #3b (Lived Experience Testing)
+- **Level 4** = Approach #4 (Formal Audit)
+
+**Key Difference**: In actual CNIB practice, Approaches #2-4 are all AccessLabs-designed and executed, not distributed across organization.
 
 ---
 
@@ -572,33 +792,43 @@ CNIB employs a spectrum of testing methodologies ranging from informal/rapid to 
 4. Hub coordinates testers and schedules
 5. Hub delivers results and tracks follow-up
 
-### Who Does What Testing
+### Who Does What Testing (Revised Based on Actual CNIB Structure)
 
-**Level 0-1 (Informal)**:
-- Any staff with AT
-- Accessibility Champions
-- Department teams
-- Coordinated by: Accessibility Hub or department
+**Approach #1: Informal Siloed Testing**:
+- **Who**: Any staff with assistive technology
+- **Coordinated by**: Not coordinated (distributed, ad hoc)
+- **Challenge**: This is the gap Task Force identified—lack of structure
+- **Recommendation**: Accessibility Hub should provide light structure (reporting template, optional logging) without stifling quick informal feedback
 
-**Level 2 (Formalized Structured)**:
-- IDEA Team members
-- IT accessibility specialists
-- AccessLabs team (internal work)
-- Trained accessibility champions (advanced)
-- Coordinated by: Accessibility Hub
+**Approach #2: Smoke Testing**:
+- **Who**: AccessLabs staff exclusively
+- **Coordinated by**: AccessLabs
+- **Request through**: Accessibility Hub (proposed) or direct to AccessLabs
+- **Note**: Quick turnaround (1-2 hours); designed for triage
 
-**Level 3 (Lived Experience)**:
-- CNIB staff/volunteers who use AT
-- CNIB clients (for client-facing testing)
-- AT user community of practice
-- Compensated for time and expertise
-- Coordinated by: Accessibility Hub or AccessLabs
+**Approach #3a: Lived Experience Testing (Internal Staff)**:
+- **Who**: CNIB staff with disabilities who use assistive technology
+- **Recruited by**: AccessLabs
+- **Compensated**: Points system (redeemable for gifts)
+- **Methodology**: AccessLabs-designed task scenarios and protocols
+- **Coordinated by**: AccessLabs
+- **Typical use**: Internal systems, internal products, moderate-stakes testing
 
-**Level 4 (Formal Conformance)**:
-- AccessLabs team exclusively (professional service)
-- IAAP-certified auditors
-- May include IDEA Team for internal context
-- Coordinated by: AccessLabs project managers
+**Approach #3b: Lived Experience Testing (External Paid Testers)**:
+- **Who**: External individuals with disabilities (non-professional users)
+- **Recruited by**: AccessLabs
+- **Compensated**: Cash/equivalent payment
+- **Methodology**: AccessLabs-designed task scenarios and protocols
+- **Coordinated by**: AccessLabs
+- **Typical use**: Client-facing products, unbiased external perspective needed, higher-stakes testing
+
+**Approach #4: Formal Professional Audits**:
+- **Who**: AccessLabs professional auditors (IAAP-certified or equivalent)
+- **Coordinated by**: AccessLabs project managers
+- **May include**: Approaches #3a or #3b as validation component
+- **Typical use**: Commercial engagements, legal compliance, high-stakes procurement
+
+**Key Principle**: AccessLabs is the professional testing function for all formal testing (Approaches #2-4). Task Force challenge is connecting staff needs to AccessLabs capacity efficiently.
 
 ---
 
