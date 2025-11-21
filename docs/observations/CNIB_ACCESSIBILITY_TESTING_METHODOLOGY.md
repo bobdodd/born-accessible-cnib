@@ -489,6 +489,131 @@ Two major concerns about internal CNIB testing informed S2 Subcommittee work:
 - **Even within organization**: Testing doesn't cover all disabilities represented on AccessLabs testing team itself
 - **Not Sheetal's fault**: Result of what AccessLabs management (Bob as her manager) tells her to do given constraints
 
+**Critical Gap: Internal vs. External User Interfaces**
+
+CNIB does not formally consider the roles of users who interact with systems and products when scoping internal testing. This creates significant blind spots.
+
+**Example: ADP Recruitment Module**
+
+**Two User Interfaces**:
+1. **Internal staff view**: Used by CNIB HR and hiring managers
+2. **External candidate view**: Used by non-CNIB job applicants
+
+**Current Testing Approach**:
+- **Internal staff interface**:
+  - Tested against IT department's supported configurations
+  - Clear guidelines: specific operating systems, browsers, assistive technology
+  - Points-based staff testers acceptable
+  - Scope bounded by CNIB staff needs
+
+- **External candidate interface**:
+  - Often tested with same approach as internal (or not tested separately at all)
+  - **Problem**: External users don't follow CNIB IT guidelines
+  - External users have diverse:
+    - Operating systems (Windows, macOS, Linux, ChromeOS, mobile)
+    - Browsers (Chrome, Firefox, Safari, Edge, mobile browsers)
+    - Assistive technologies (JAWS, NVDA, VoiceOver, TalkBack, ZoomText, Dragon, etc.)
+    - Devices (desktops, laptops, tablets, smartphones)
+    - Experience levels (from expert to novice AT users)
+
+**Why External-Facing Interfaces Require Different Testing**:
+
+1. **Broader User Diversity**
+   - Internal staff: Known configurations, managed IT environment
+   - External candidates: Unknown configurations, unmanaged environments
+   - Testing scope must expand to cover diverse technology stacks
+
+2. **Legal Compliance Requirements**
+   - **Internal systems**: Duty to accommodate (AODA employment provisions)
+   - **External-facing systems**: Public-facing accessibility requirements (AODA customer service, information and communications)
+   - Legal bar higher for public-facing systems
+   - CNIB cannot claim "works for our staff" when external users have barriers
+
+3. **Reputational Impact**
+   - **Internal system barrier**: Staff escalates to IT/AccessLabs, resolved internally
+   - **External candidate barrier**: Candidate may abandon application, tell others, damage CNIB reputation
+   - CNIB as accessibility organization held to higher public standard
+   - Inaccessible recruitment contradicts CNIB's mission and expertise
+
+4. **Policy Alignment**
+   - **CNIB accessibility policies and strategies**: Commitment to accessible practices
+   - **Recruitment accessibility**: Cannot have accessible hiring if recruitment tools exclude candidates with disabilities
+   - **Integrity issue**: Saying we value accessibility while recruitment system creates barriers
+
+5. **Testing Resource Requirements**
+   - **Internal testing**: Points-based staff testers may suffice
+   - **External testing**: Requires paid external testers (diverse AT, devices, experience levels)
+   - **Comprehensive testing**: More AT combinations, more browser/OS combinations, more devices
+   - **Cost**: Significantly higher for external-facing systems
+
+**Current Organizational Challenge**:
+
+**Resistance to Expanded Testing Scope**:
+- "More testing" perceived as burden
+- "More cost" not budgeted or expected
+- "Why can't we just use points-based testers?" (because external users need external perspective)
+- Lack of understanding that external-facing = different legal/reputational requirements
+
+**Example Conversation**:
+> Internal stakeholder: "Can't we just have our staff test the candidate portal? They already tested the internal view."
+>
+> AccessLabs perspective: "Staff testing is valuable but insufficient. External candidates use different AT, different devices, different browsers. Staff are also familiar with CNIB context—they'll work around issues a candidate might not. We need external paid testers for the candidate-facing interface, and broader AT/device coverage. This is more expensive, but legally and reputationally necessary."
+
+**What's Missing: Formal Scoping Framework**
+
+CNIB lacks formal process to assess:
+- **Who will use this system?** (staff only, external users, both?)
+- **What access do external users have?** (entire system, limited features, specific workflows?)
+- **What are legal requirements?** (internal accommodation vs. public accessibility standards?)
+- **What is reputational risk?** (low-visibility internal tool vs. high-visibility public interface?)
+- **What testing scope is required?** (staff configurations only vs. diverse external configurations?)
+- **What testing resources are needed?** (points-based staff vs. paid external testers, comprehensive AT/device coverage?)
+
+**Consequence: Underestimated Testing Scope and Cost**
+
+When procurement requests testing, default assumption often:
+- "Test if it works for our staff"
+- Budget for limited testing (points-based staff testers, quick timeline)
+- Surprise when AccessLabs says "external interface needs comprehensive paid testing"
+- Tension between what should be tested vs. what was budgeted
+
+**Task Force Hope: Clearer Understanding of Necessary Scope and Cost**
+
+One of Bob Dodd's primary hopes for Accessibility Task Force:
+- **Organizational clarity**: Formal framework for scoping testing based on user roles
+- **Budget reality**: Accurate cost estimates for external-facing system testing
+- **Procurement integration**: Testing scope assessment built into procurement process (before purchase)
+- **Policy alignment**: Testing requirements that reflect CNIB's accessibility commitments
+- **Risk management**: Appropriate testing investment based on legal/reputational risk
+
+**What S2 Should Recommend**:
+
+**User Role Assessment Framework**:
+- Every system testing request asks: "Who are the users?" (staff, external, both?)
+- External-facing systems automatically trigger expanded testing scope
+- Clear definitions:
+  - **Staff-only**: CNIB IT supported configurations, points-based testers acceptable
+  - **External-facing**: Diverse configurations, paid external testers required, comprehensive AT/device/browser coverage
+  - **Hybrid**: Separate testing for each interface, different scopes
+
+**Testing Scope Matrix**:
+| User Type | Legal Requirement | AT/Device Coverage | Tester Type | Estimated Cost | Timeline |
+|-----------|-------------------|-------------------|-------------|----------------|----------|
+| **Staff-only** | Accommodation (AODA employment) | CNIB IT supported configs | Points-based staff | Lower | Shorter |
+| **External-facing** | Public accessibility (AODA information/communications) | Broad AT/device/browser coverage | Paid external testers | Higher | Longer |
+| **Hybrid** | Both | Both (separate testing for each interface) | Both | Highest | Longest |
+
+**Procurement Integration**:
+- User role assessment happens at procurement stage (before purchase decision)
+- Accurate testing cost estimates included in total cost of ownership
+- Testing timeline built into implementation schedule
+- No surprises: "We thought it was just staff testing, why is this so expensive?"
+
+**Budget Advocacy**:
+- Data from testing requests shows proportion of external-facing systems
+- Justification for dedicated external tester budget (not ad hoc per-request)
+- Capacity planning: X external-facing systems per year = Y external testing hours needed
+
 **What Internal Testing Is**:
 - Valuable for procurement decisions ("will this work for our staff?")
 - Quick assessment of usability for blind/low vision users
