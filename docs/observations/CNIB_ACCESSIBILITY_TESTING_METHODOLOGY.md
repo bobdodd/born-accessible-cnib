@@ -489,6 +489,153 @@ Two major concerns about internal CNIB testing informed S2 Subcommittee work:
 - **Even within organization**: Testing doesn't cover all disabilities represented on AccessLabs testing team itself
 - **Not Sheetal's fault**: Result of what AccessLabs management (Bob as her manager) tells her to do given constraints
 
+**Critical Gap: Narrow Disability Representation in Internal Testing**
+
+One of CNIB's great strengths is focus on what it means to be blind. This expertise is core to CNIB's mission and value. However, this focus creates a significant blind spot (literally and figuratively) in internal testing: **CNIB typically tests internally using only blind and low vision testers.**
+
+**Who CNIB Does NOT Test With Internally**:
+
+1. **Deaf/Deafened/Deafblind Users**
+   - CNIB has Deafblind Community Services staff
+   - Recent complaints from Deafblind staff about lack of testing with their community
+   - Video content, audio alerts, captions, transcripts often untested
+   - Deafblind users have unique AT needs (braille displays, tactile interfaces)
+
+2. **Mobility/Dexterity/Kinesthetic Disabilities**
+   - Users who cannot use mouse (keyboard-only navigation, switch control, eye-tracking)
+   - Users with limited fine motor control (target size, clickable areas, drag-and-drop)
+   - Users with tremor or spasticity (time limits, precision requirements)
+   - Voice control users (Dragon NaturallySpeaking, Voice Control)
+
+3. **Cognitive/Information Processing Disabilities**
+   - Users with learning disabilities (dyslexia, dyscalculia)
+   - Users with attention disorders (ADHD)
+   - Users with memory challenges
+   - Users with language processing difficulties
+   - Complex interfaces, jargon, unclear instructions often not tested for cognitive accessibility
+
+**Statistical Reality**:
+- CNIB has thousands of staff and volunteers
+- Statistically, significant numbers must have disabilities beyond blind/low vision
+- Canada: ~22% of population reports disability (not all vision-related)
+- Among CNIB staff/volunteers with vision disabilities, many also have other disabilities
+
+**Intersectionality**:
+- Being blind does not mean you have no other disability
+- People experience blindness differently based on lived experience
+- Blind person with mobility disability has different AT needs than blind person without
+- Blind Deaf person has profoundly different AT needs than blind hearing person
+- Age, language, education, technology access, socioeconomic status all intersect with disability
+
+**Current Testing Practice**:
+- Blind/low vision testers: Yes (typically 1-3 testers for internal requests)
+- All other disabilities: No
+- **Number of testers**: Bare minimum
+  - Cost constraint: More testers = more points/payment
+  - Timeline constraint: Many requests have unreasonably short timescales
+  - Typical internal testing: 1-3 blind/low vision staff testers
+  - Not enough testers even within blind/low vision (diverse AT, experience levels)
+  - Definitely not enough to cover other disabilities
+
+**Example: Typical Internal Testing Request**
+
+> Request: Test new expense management system (internal staff use only)
+>
+> Testing done: 2 blind staff testers using JAWS and NVDA
+> - Tester 1: Expert JAWS user, Windows, desktop
+> - Tester 2: Intermediate NVDA user, Windows, laptop
+>
+> Not tested:
+> - Keyboard-only navigation (mobility)
+> - Voice control (mobility)
+> - Cognitive load (information processing)
+> - Captions on training videos (Deaf/Deafblind)
+> - Mobile responsiveness (diverse devices)
+> - VoiceOver on Mac/iOS (different screen reader)
+> - ZoomText without screen reader (low vision only)
+> - Beginner screen reader users (experience level diversity)
+
+**Why This Matters**:
+
+1. **Legal Compliance**
+   - AODA requires accommodation for all disabilities, not just vision
+   - Testing only blind/low vision = incomplete legal due diligence
+   - System may be accessible for blind users but not for Deaf or mobility-disabled users
+
+2. **CNIB Staff Equity**
+   - CNIB staff with non-vision disabilities excluded from testing
+   - Barriers may only be discovered after deployment (too late for preventive testing)
+   - Staff with multiple disabilities may face compounded barriers
+
+3. **CNIB Mission Alignment**
+   - CNIB advocates for accessibility broadly (not just vision)
+   - CNIB's Come to Work program supports employers with all disability accommodations
+   - Internal practice should reflect external advocacy
+
+4. **Quality and Effectiveness**
+   - Systems accessible for blind users but not others = incomplete accessibility
+   - Keyboard navigation issues affect blind AND mobility-disabled users (testing only screen reader users misses keyboard-only users)
+   - Cognitive accessibility benefits everyone (plain language, clear instructions, consistent navigation)
+
+**Deafblind Community Services Staff Complaint**:
+- Staff from Deafblind Community Services have recently raised concerns
+- Feel excluded from testing process
+- Systems deployed without testing for Deafblind user needs
+- Barriers discovered only after launch, when remediation more expensive
+- "Nothing About Us Without Us" principle violated
+
+**Resource and Timeline Pressures**:
+
+**Why So Few Testers?**
+1. **Cost**: More testers = more points (staff) or more payment (external)
+2. **Timeline**: Unreasonably short deadlines mean limited testing window
+3. **Availability**: Finding testers with specific disabilities and availability is difficult
+4. **Process**: No formal process to recruit diverse disability testers
+
+**Typical Timeline Constraint**:
+> Procurement: "We need this tested by Friday for procurement decision Monday."
+>
+> Reality: Friday is 3 days away. Finding, scheduling, and testing with even 2-3 blind testers is challenging. Finding and scheduling Deaf, mobility, and cognitive disability testers is impossible in that timeframe.
+
+**Consequence**: Default to bare minimum blind/low vision testers because they're known, available, and fit within tight timeline.
+
+**What S2 Should Recommend**:
+
+**Disability Representation Framework**:
+1. **Baseline Testing** (all internal systems):
+   - Blind/low vision: 2-3 testers (JAWS, NVDA, VoiceOver, ZoomText)
+   - Keyboard-only/mobility: 1-2 testers (no mouse, voice control)
+   - Cognitive: 1 tester or expert heuristic review
+
+2. **Expanded Testing** (external-facing systems, high-stakes internal):
+   - Add Deaf/Deafblind: 1-2 testers (captions, transcripts, visual alerts)
+   - Expand mobility: Additional voice control, switch control, eye-tracking
+   - Expand cognitive: User testing with diverse cognitive abilities
+
+3. **Tester Diversity Within Blind/Low Vision**:
+   - Expert vs. beginner screen reader users
+   - Windows vs. Mac vs. mobile
+   - JAWS vs. NVDA vs. VoiceOver vs. TalkBack
+   - Braille display users
+   - Different age groups, language backgrounds, technology access
+
+**Tester Recruitment and Compensation**:
+- **Internal CNIB staff**: Build roster of staff with diverse disabilities willing to test (compensated with points)
+- **CNIB volunteers**: Recruit volunteers with diverse disabilities (compensated appropriately)
+- **External testers**: Partner with disability communities for external perspective
+- **Fair compensation**: Recognize expertise across all disabilities (not just vision)
+
+**Timeline Reality**:
+- Diverse disability testing requires MORE time, not less
+- Procurement timelines must account for comprehensive testing
+- "Test by Friday" incompatible with diverse disability testing
+- S2 should recommend minimum testing timelines based on scope
+
+**Budget Reality**:
+- Comprehensive testing costs more (more testers, more disability categories)
+- Budget for diversity, not just blind/low vision minimum
+- Cost of fixing barriers post-launch > cost of comprehensive testing pre-launch
+
 **Critical Gap: Internal vs. External User Interfaces**
 
 CNIB does not formally consider the roles of users who interact with systems and products when scoping internal testing. This creates significant blind spots.
