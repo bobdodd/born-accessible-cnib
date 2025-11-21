@@ -63,7 +63,109 @@ CNIB employs five distinct testing approaches, differing in formality, methodolo
 
 ### 3. Lived Experience Accessibility Testing (AccessLabs-Designed and Executed)
 
-CNIB employs two models of lived experience testing, both designed and executed by AccessLabs:
+CNIB employs two models of lived experience testing, both designed and executed by AccessLabs.
+
+**AccessLabs Evidential Testing Methodology**:
+
+AccessLabs operates on the principle of **evidential testing**: everything tested is recorded on video, usually as screen recordings. This methodology provides:
+
+**Process**:
+1. **Record**: Testers record screen activity while testing with assistive technology
+2. **Think-aloud protocol**: Testers narrate experience as they interact ("I'm trying to click this button, but my screen reader isn't announcing it")
+3. **Analyze**: AccessLabs staff review recordings for usability and accessibility concerns
+4. **Report**: Structured feedback provided to clients through AccessLabs online portal
+5. **Evidence package**: Video recordings, screenshots, code samples available for developers
+
+**Benefits of Evidential Testing**:
+- **Concrete evidence**: Not just "this doesn't work" but video showing exactly what happens
+- **Developer understanding**: Developers see and hear tester experience firsthand
+- **Reproducibility**: Video documentation enables developers to recreate issue
+- **Training value**: Recordings educate developers about how AT users interact with systems
+- **Accountability**: Evidence creates shared understanding of severity and impact
+- **Historical record**: Testing iterations documented over time
+
+**Application Across Testing Types**:
+- **External paid testing**: Comprehensive video documentation standard practice
+- **Internal CNIB testing**: Applied as far as practicable (same principle, sometimes limited by timeline/scope)
+- **Developer Assistance Package**: Portal provides developers login access to video recordings, screen recordings, evidence packages
+
+**Where AccessLabs Misses the Mark: Document Accessibility**:
+
+One area where evidential testing methodology is **not consistently applied**: **document accessibility testing**.
+
+**The Gap**:
+- **Web/app testing**: Fully recorded with think-aloud protocol, analyzed, evidence provided
+- **Document testing**: Often less rigorous, may lack video evidence, think-aloud not always captured
+- Documents (PDFs, Word, PowerPoint, Excel): Should receive same evidential rigor as web/app testing
+- Testers should think aloud as they interact with electronic documents through assistive technology
+- Screen recordings should capture:
+  - Navigation through document structure (headings, lists, tables)
+  - Reading order issues
+  - Alt text availability and quality
+  - Form field accessibility
+  - Table navigation with screen readers
+  - Link purpose and context
+  - Color contrast and visual readability
+
+**Why Document Accessibility Matters**:
+- **Volume**: CNIB creates hundreds of documents monthly (policies, training, communications, forms, reports)
+- **Staff impact**: Inaccessible documents create daily barriers for staff with disabilities
+- **Client impact**: CNIB provides resources and services via documents to clients with disabilities
+- **Legal requirements**: AODA applies to documents, not just websites
+- **Organizational credibility**: "Practice what we preach"—CNIB should model accessible document creation
+
+**Current Document Testing Practice**:
+- **Ad hoc**: Document testing often informal, not systematically recorded
+- **Limited expertise**: Not all staff know how to test documents accessibly
+- **No remediation process**: When barriers found, unclear who fixes them or how
+- **Inconsistent standards**: Lack of organizational templates and guidelines
+- **Training gap**: Document creators not trained in accessible document creation
+
+**Task Force Hope: Document Accessibility Testing and Remediation Processes**
+
+One of Bob Dodd's primary hopes for Accessibility Task Force: **Address document accessibility testing and remediation processes comprehensively.**
+
+**What This Means**:
+1. **Extend evidential testing to documents**: Same rigor as web/app testing
+   - Video screen recordings of document testing
+   - Think-aloud protocol captured
+   - Structured feedback through AccessLabs portal or Accessibility Hub
+   - Evidence package for document creators
+
+2. **Document testing protocol**: Standardized methodology
+   - Checklist for document accessibility (headings, alt text, reading order, tables, forms, contrast)
+   - Testing with multiple assistive technologies (screen readers, magnification, voice control)
+   - Testing document types (PDF, Word, PowerPoint, Excel, etc.)
+
+3. **Remediation process**: Clear workflow for fixing barriers
+   - Who fixes documents? (Creator, centralized team, AccessLabs?)
+   - Timeline for remediation based on priority
+   - Retesting after fixes
+   - Quality assurance before publication
+
+4. **Preventive approach**: Accessible document creation from start
+   - **Templates**: Organization-wide accessible templates (Word, PowerPoint, Excel, InDesign)
+   - **Training**: Document creator training on accessible document creation
+   - **Tools**: Accessibility checkers integrated into creation workflow (Office Accessibility Checker, Adobe Acrobat Pro)
+   - **Guidelines**: Clear Print guidelines, CNIB document standards, WCAG 2.1 AA for documents
+
+5. **Accountability**: Ownership and tracking
+   - Document accessibility requirements in job descriptions
+   - Accessibility Hub tracks document testing requests
+   - Metrics on document testing volume, pass rates, remediation time
+   - Quality assurance: sample documents tested before organization-wide rollout
+
+**S2 Recommendation: Document Accessibility Framework**:
+- **Testing**: Extend evidential testing methodology to documents
+- **Remediation**: Clear process and ownership for fixing inaccessible documents
+- **Prevention**: Templates, training, tools, guidelines to create accessible documents from start
+- **Accountability**: Tracking, metrics, quality assurance
+
+**Born Accessible Principle for Documents**:
+- Documents born accessible > retrofitting inaccessible documents
+- Accessible templates + trained creators = prevention
+- Evidential testing = accountability and learning
+- Systematic remediation = continuous improvement
 
 #### 3a. Internal Staff Testers (Compensated with Points)
 
